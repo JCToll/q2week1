@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Web Design</title>
+   <link href="https://fonts.googleapis.com/css?family=Lato|Muli|Fjord+One|Asap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css"> 
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+
+<body>
+  
+  <header> 
+    <h1>G-RWD - Geriatric Responsive Web Design </h1>
+    <!-- add horizontal navigation bar  to link to the 4 main web pagess 
+                and, make current page "active" -->
+    <p> Responsive Web Design (RWD) is a well established method aimed at providing an optimal web viewing experience — easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices, from mobile phones to desktop computer monitors. 
+    <br>G-RWD LLC is a company with a mission to improve the RWD experience for the geriatric (elderly) community. </p>
+
+  </header>
+  
+    <!-- add vertical left bar to list different web pages 
+                and, make current page "active" -->
+    <aside>
+      <br>
+      <figure>
+                  <img src="images/grandma_do_you_computer.jpg" alt="angry grandma on computer"  width="200" height="130">
+        <!--   <figcaption>Grandma needs help! </figcaption>   -->
+      </figure>
+      <br>
+      <p>The following articles provide additional background about RWD and geriatrics: </p>
+      <br>
+      <p><a href="https://www.sciencedaily.com/releases/2007/03/070316140944.htm"  target="_blank">Why Computers Frustrate Older Adults</a></p><br>
+      <p><a href="http://www.pewinternet.org/2017/05/17/technology-use-among-seniors/" target="_blank">Pew Research - Technology use among seniors </a></p><br>
+      <p><a href="https://www.smashingmagazine.com/2015/02/designing-digital-technology-for-the-elderly/" target="_blank">Designing For The Elderly: Ways Older People Use Digital Technology Differently</a></p>
+  
+    </aside>
+  
+ <!-- start with main intro in the "sections"-->  
+  <section>
+      <h2>Problem Statement</h2>
+          <p class="narrow">The first wave of baby boomer's age is already in their early 70's, and as this population increases, the need to address the technology adoption challenges of this aging population increases. And to further the challenge, Grandma is going mobile!  The application of RWD methods is critical for creating web pages that function across all platforms.  However, the biggest challenge which many are not addressing with RWD, is the need to apply RWD to the special requirements of the geriatric user.   </p>
+    <p class="narrow">The unique special needs of the elderly are: </p>
+          <ul>
+            <li>- Physical constraints: The way older people hold devices or touch the screen can be problematic to the way touch screens have been developed. The average response time for an icon is 0.7 seconds - but the average response time of someone aged 65 or over is one second. Shaky hands, and multiple fingers on the screen at once can also cause problems.  </li>
+            <li>- Impaired vision and hearing: there is more to this than just providing larger fonts and louder volume.  </li>
+            <li>- Information overload: the elderly can get easily confused with too much data and too many options. </li>
+            <li>... and much more!</li>
+          </ul> 
+          <br>
+      <h2>Solution</h2>
+          <p class="narrow">G-RWD LLC is focused on helping RWD developers to apply methods and techniques that will help your elderly customers interact with your web pages. To get more information about how to target your RWD development to the geriatric community, fill out the request form below.   
+          </p>
+      <hr>
+      <br>
+
+
+   <form method="GET">
+      <label>*= <i>Required input </i></label> <br>
+     <label>Last name*: <input type="text" name="last-name" required> </label> 
+     <label class="repeat">  First name*: <input type="text" name="first-name" required></label>
+      <br><label>Address: <input type="text" name="address"></label>
+     <br><label>City: <input type="text" name="city"></label> 
+     <label class="repeat">  ZIP: <input type="number" name="zip"></label> 
+      <br>
+     <br><label>E-mail*: <input type="email" name="pw" required> </label> 
+     <label class="repeat"> Phone*: <input type="number" name="phone" required> </label>
+      <br> <br>
+      <br><br>
+     
+      <label>My level of expertise in responsive web design (RWD) is: 
+      <select name="expertise">
+        <option value="">Please select</option>
+        <option value="none">I have never used RWD but have interest in this technology. </option>
+        <option value="novice">I am a novice user with limited experience using RWD.   </option>
+        <option value="moderate">I am a moderate user who occasionaly uses RWD.   </option>            
+        <option value="expert">I am an expert RWD user with alot of experience.</option>
+      </select> </label>
+      <br><br>
+    
+      <br><br>
+      <label>G-RWD LLC can email you information on how to apply RWD to support your geriatric users. </label><br> 
+      <label>Select (one or more) areas of interest:</label> <br>
+      <label><input type="checkbox" name="request_info" value="basic RWD apps" checked> Basic RWD methods to support a wide range of devices.  </label><br>
+      <label><input type="checkbox" name="request_info" value="vision RWD apps "> G-RWD applications to support vision needs of the elderly users. </label><br>
+      <label><input type="checkbox" name="request_info" value="auditory RWD apps "> G-RWD applications to support auditory needs of the elderly users. </label><br>
+      <label><input type="checkbox" name="request_info" value="tactile RWD apps "> G-RWD applications to support tactile needs of the elderly users. </label><br>
+      <label>  <input type="checkbox" name="request_info" value="advanced RWD apps"> G-RWD LLC development of advanced methods using AI.  </label><br>
+     <label><input type="checkbox" name="request_info" value="Other"></label>
+     <label> Other: <textarea name="other_info" rows=1 cols=40></textarea>  </label>     
+      <br><br>
+     
+     <label>Input additional requests:</label> <br>
+     <label><textarea name="more-comments" rows=5 cols=70>  </textarea> </label>    
+     <br> <br>
+     <label><input type="submit" value="Submit Request"> </label>
+
+
+  </form>
+ 
+</section>
+
+    
+<!-- add a common footer that is common to all pages; needs to go to the bottom -->
+  <div class="footer">
+    <details>
+      <summary> G-RWD LLC &copy; 2017 || Posted by: Joel Tollefson</summary>
+      <p>G-RWD LLC ; PO Box 234; Issaquah, WA </p>
+      <p>Contact information: <a href="mailto:Joel.Tollefson@GRWD.com">
+          Joel.Tollefson@GRWD.com</a>  </p>
+      <time datetime="2017-10-28">Revision date:2018-01-14</time> <!-- not sure how datetime works -->
+    </details>
+  </div>
+    
+</body>
+  
+</html>
